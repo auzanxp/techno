@@ -17,7 +17,7 @@ function Navbar() {
               onClick={() => setShow(!show)}
               className={`${
                 show ? "hidden" : ""
-              } flex bg-[#D2E4F7] p-2 rounded-md font-medium gap-2 sm:block md:hidden text-primary hover:text-gray-700 focus:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500`}
+              } flex bg-[#D2E4F7] p-2 rounded-md font-medium gap-2 md:hidden text-primary hover:text-gray-700 focus:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500`}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
