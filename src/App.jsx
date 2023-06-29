@@ -1,3 +1,5 @@
+import ContactUs from "./components/ContactUs";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import MeetTeam from "./components/MeetTeam";
 import Navbar from "./components/Navbar";
@@ -11,7 +13,9 @@ function App() {
       <Hero />
       <OurWork />
       <OurSuccess />
-      <MeetTeam/>
+      <MeetTeam />
+      <ContactUs />
+      <Footer />
     </>
   );
 }

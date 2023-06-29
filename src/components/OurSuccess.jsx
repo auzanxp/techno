@@ -7,7 +7,7 @@ const OurSuccess = () => {
         <h1 className="text-center mb-4 font-extrabold text-primary text-2xl">
           Our Success by the number
         </h1>
-        <p className="text-center w-full md:w-1/2 text-slate-500">
+        <p className="text-center w-full lg:w-1/2 text-slate-500">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
           deleniti ipsam alias obcaecati id optio voluptates debitis facilis
           minima illo. Lorem ipsum. Obcaecati ad est beatae quo architecto

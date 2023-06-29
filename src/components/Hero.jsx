@@ -14,10 +14,10 @@ const Hero = () => {
             </h1>
           </div>
           <div className="flex flex-col sm:flex-row justify-center items-center px-2 gap-2 w-full">
-            <button className="w-full sm:w-fit text-white hover:bg-primary lg:text-lg hover:border-white hover:border bg-secondary transition duration-150 ease-in-out rounded-lg px-4 sm:px-8 py-2 sm:py-3 text-sm">
+            <button className="w-full sm:w-fit text-white hover:bg-[#5D9CDF] lg:text-lg bg-secondary transition duration-150 ease-in-out rounded-lg px-4 sm:px-8 py-2 sm:py-3 text-sm">
               Start project with us
             </button>
-            <button className="w-full sm:w-fit hover:bg-white lg:text-xl hover:border-white transition duration-150 ease-in-out hover:bg-indigo-700-800 rounded-lg hover:border text-slate-700 bg-slate-300 px-4 sm:px-8 py-2 sm:py-3 text-sm">
+            <button className="w-full sm:w-fit hover:bg-white lg:text-xl  transition duration-150 ease-in-out hover:bg-indigo-700-800 rounded-lg text-slate-700 bg-slate-300 px-4 sm:px-8 py-2 sm:py-3 text-sm">
               Learn More
             </button>
           </div>

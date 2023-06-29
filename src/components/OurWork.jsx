@@ -8,7 +8,7 @@ const OurWork = () => {
       </h1>
       <div className="flex flex-wrap">
         <div className="w-1/2 sm:w-1/3 md:w-1/4 px-4 my-3">
-          <div className="relative">
+          <div className="relative hover:scale-105 transition duration-300">
             <img
               className="w-full h-auto rounded-lg"
               src="https://placehold.co/600x600/174A7E/FFFFFF.png"
@@ -20,7 +20,7 @@ const OurWork = () => {
           </div>
         </div>
         <div className="w-1/2 sm:w-1/3 md:w-1/4 px-4 my-3 ">
-          <div className="relative">
+          <div className="relative hover:scale-105 transition duration-300">
             <img
               className="w-full h-auto rounded-lg "
               src="https://placehold.co/600x600/174A7E/FFFFFF.png"
@@ -32,7 +32,7 @@ const OurWork = () => {
           </div>
         </div>
         <div className="w-1/2 sm:w-1/3 md:w-1/4 px-4 my-3 ">
-          <div className="relative">
+          <div className="relative hover:scale-105 transition duration-300">
             <img
               className="w-full h-auto rounded-lg"
               src="https://placehold.co/600x600/174A7E/FFFFFF.png"
@@ -44,7 +44,7 @@ const OurWork = () => {
           </div>
         </div>
         <div className="w-1/2 sm:w-1/3 md:w-1/4 px-4 my-3 ">
-          <div className="relative">
+          <div className="relative hover:scale-105 transition duration-300">
             <img
               className="w-full h-auto rounded-lg"
               src="https://placehold.co/600x600/174A7E/FFFFFF.png"
