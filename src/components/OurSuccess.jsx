@@ -14,11 +14,8 @@ const OurSuccess = () => {
           accusantium?
         </p>
       </div>
-      <div
-        id="data"
-        className="flex w-full xl:w-4/6 h-auto justify-center items-center bg-primary rounded-lg py-4"
-      >
-        <div className="flex flex-wrap lg:flex-no-wrap text-white">
+      <div className="flex w-full xl:w-4/6 h-auto justify-center items-center bg-primary rounded-lg py-2">
+        <div className="flex flex-wrap lg:flex-no-wrap w-full text-white">
           <div className="w-1/2 md:w-1/4 p-4">
             <div className="text-center font-bold text-3xl">15 +</div>
             <div className="text-center text-slate-300">Team member</div>
@@ -32,7 +29,7 @@ const OurSuccess = () => {
             <div className="text-center text-slate-300">Projects</div>
           </div>
           <div className="w-1/2 md:w-1/4 p-4">
-            <div className="text-center font-bold text-3xl">Coupel</div>
+            <div className="text-center font-bold text-3xl">A Coupel</div>
             <div className="text-center text-slate-300">
               Successfull products
             </div>
