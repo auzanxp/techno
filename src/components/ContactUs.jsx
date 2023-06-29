@@ -1,9 +1,8 @@
-import React from "react";
 import Form from "./Form";
 
 const ContactUs = () => {
   return (
-    <div
+    <section
       id="contactus"
       className="w-full container mx-auto mb-8 px-0 md:px-6 flex flex-col justify-center items-center"
     >
@@ -18,10 +17,10 @@ const ContactUs = () => {
           accusantium?
         </p>
       </div>
-      <div className="flex w-full h-auto justify-center items-center">
+      <article className="flex w-full h-auto justify-center items-center">
         <Form />
-      </div>
-    </div>
+      </article>
+    </section>
   );
 };
 
