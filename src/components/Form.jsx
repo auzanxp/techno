@@ -29,7 +29,7 @@ const Form = () => {
               <input
                 {...register("firstName")}
                 name="firstName"
-                className="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100"
+                className="text-base leading-none text-gray-900 p-3 focus:outline-secondary mt-4 bg-gray-100 border rounded border-gray-200 "
               />
               {errors.firstName ? (
                 <span className="text-red-500 pt-2">
@@ -46,7 +46,7 @@ const Form = () => {
               <input
                 {...register("lastName")}
                 name="lastName"
-                className="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100"
+                className="text-base leading-none text-gray-900 p-3 focus:outline-secondary focus:outline-prim mt-4 bg-gray-100 border rounded border-gray-200 "
               />
               {errors.lastName ? (
                 <span className="text-red-500 pt-2">
@@ -64,7 +64,7 @@ const Form = () => {
             <input
               {...register("company")}
               name="company"
-              className="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100"
+              className="text-base leading-none text-gray-900 p-3 focus:outline-secondary mt-4 bg-gray-100 border rounded border-gray-200 "
             />
             {errors.company ? (
               <span className="text-red-500 pt-2">
@@ -82,7 +82,7 @@ const Form = () => {
               <input
                 {...register("email")}
                 name="email"
-                className="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100"
+                className="text-base leading-none text-gray-900 p-3 focus:outline-secondary mt-4 bg-gray-100 border rounded border-gray-200 "
               />
               {errors.email ? (
                 <span className="text-red-500 pt-2">
@@ -99,7 +99,7 @@ const Form = () => {
               <input
                 {...register("subject")}
                 name="subject"
-                className="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100"
+                className="text-base leading-none text-gray-900 p-3 focus:outline-secondary mt-4 bg-gray-100 border rounded border-gray-200 "
               />
               {errors.subject ? (
                 <span className="text-red-500 pt-2">
@@ -117,7 +117,7 @@ const Form = () => {
                 {...register("messageContact")}
                 role="textbox"
                 name="messageContact"
-                className="h-36 text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100 resize-none"
+                className="h-36 text-base leading-none text-gray-900 p-3 focus:outline-secondary mt-4 bg-gray-100 border rounded border-gray-200  resize-none"
               />
               {errors.messageContact ? (
                 <span className="text-red-500 pt-2">
@@ -129,7 +129,7 @@ const Form = () => {
             </div>
           </div>
           <div className="flex items-center justify-between w-full">
-            <button className="mt-9 text-base font-medium leading-none text-white py-4 px-10 bg-primary rounded-lg hover:bg-secondary focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 focus:outline-none">
+            <button className="mt-9 text-base font-medium leading-none text-white py-4 px-8 bg-primary rounded-lg hover:bg-secondary transition duration-300 ease-in-out ">
               Send
             </button>
             <p className="text-xs leading-3 text-gray-600 mt-4">

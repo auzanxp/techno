@@ -4,12 +4,12 @@ import { Link } from "react-scroll";
 const Navbar = () => {
   const [show, setShow] = useState(false);
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-white shadow md:shadow-none z-10 w-full">
-      <div className="py-5 md:py-0 container mx-auto lg:px-0 px-6 flex items-center justify-between">
+    <nav className="fixed top-0 left-0 right-0 bg-white z-10 w-full">
+      <div className="py-5 lg:py-0 container mx-auto lg:px-0 px-6 flex items-center justify-between">
         <div>
           <Link to="hero" spy={true} smooth={true} offset={-120} duration={500}>
             <img
-              className="w-36 md:w-40 cursor-pointer"
+              className="w-36 lg:w-40 cursor-pointer"
               src="https://www.technovative.co.id/_nuxt/img/technovative-logo_scale-w350.7e6ea57.png"
               alt="logo"
             />
@@ -19,12 +19,12 @@ const Navbar = () => {
           <button
             onClick={() => setShow(!show)}
             className={`${
-              show ? "hidden" : ""
-            } flex bg-[#D2E4F7] p-2 rounded-md font-medium gap-2 md:hidden text-primary hover:text-gray-700 focus:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500`}
+              show ? "block" : ""
+            } flex bg-[#D2E4F7] p-2 rounded-md font-medium gap-2 lg:hidden text-primary hover:text-gray-700 focus:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500`}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="md:hidden"
+              className="lg:hidden"
               width={24}
               height={24}
               stroke="#184A7E"
@@ -41,11 +41,11 @@ const Navbar = () => {
           </button>
           <div
             id="menu"
-            className={` ${show ? "" : "hidden"} md:block lg:block `}
+            className={` ${show ? "" : "hidden"} lg:block `}
           >
             <button
               onClick={() => setShow(!show)}
-              className={`block md:hidden lg:hidden text-gray-500 hover:text-gray-700 focus:text-gray-700 fixed focus:outline-none focus:ring-2 focus:ring-gray-500 z-30 top-0 right-12 mt-6`}
+              className={`block lg:hidden text-gray-500 hover:text-gray-700 focus:text-gray-700 fixed focus:outline-none focus:ring-2 focus:ring-gray-500 z-30 top-0 right-12 mt-6`}
             >
               <svg
                 aria-label="close main menu"
@@ -64,8 +64,8 @@ const Navbar = () => {
                 <line x1={6} y1={6} x2={18} y2={18} />
               </svg>
             </button>
-            <ul className="flex text-3xl md:text-base font-bold items-center py-10 md:flex flex-col md:flex-row justify-center fixed md:relative top-0 bottom-0 left-0 right-0 bg-white md:bg-transparent z-20">
-              <li className="text-primary hover:text-secondary cursor-pointer text-base lg:text-lg pt-10 md:pt-0">
+            <ul className="flex text-3xl lg:text-base font-bold items-center py-10 lg:flex flex-col lg:flex-row justify-center fixed lg:relative top-0 right-0 w-1/3 lg:w-full bg-white rounded-lg shadow-md lg:shadow-none lg:bg-transparent z-20">
+              <li className="text-primary hover:text-secondary cursor-pointer text-base lg:text-lg pt-10 lg:pt-0">
                 <Link
                   to="hero"
                   spy={true}
@@ -77,7 +77,7 @@ const Navbar = () => {
                   Home
                 </Link>
               </li>
-              <li className="text-primary hover:text-secondary cursor-pointer text-base lg:text-lg pt-10 md:pt-0 md:ml-5 lg:ml-10">
+              <li className="text-primary hover:text-secondary cursor-pointer text-base lg:text-lg pt-10 lg:pt-0 lg:ml-5 xl:ml-10">
                 <Link
                   to="ourwork"
                   spy={true}
@@ -89,7 +89,7 @@ const Navbar = () => {
                   Our Work
                 </Link>
               </li>
-              <li className="text-primary hover:text-secondary cursor-pointer text-base lg:text-lg pt-10 md:pt-0 md:ml-5 lg:ml-10">
+              <li className="text-primary hover:text-secondary cursor-pointer text-base lg:text-lg pt-10 lg:pt-0 lg:ml-5 xl:ml-10">
                 <Link
                   to="oursuccess"
                   spy={true}
@@ -101,7 +101,7 @@ const Navbar = () => {
                   Our Success
                 </Link>
               </li>
-              <li className="text-primary hover:text-secondary cursor-pointer text-base lg:text-lg pt-10 md:pt-0 md:ml-5 lg:ml-10">
+              <li className="text-primary hover:text-secondary cursor-pointer text-base lg:text-lg pt-10 lg:pt-0 lg:ml-5 xl:ml-10">
                 <Link
                   to="meetteam"
                   spy={true}
@@ -113,7 +113,7 @@ const Navbar = () => {
                   Our Team
                 </Link>
               </li>
-              <li className="text-primary md:hidden hover:text-secondary cursor-pointer text-base lg:text-lg pt-10 md:pt-0 md:ml-5 lg:ml-10">
+              <li className="text-primary md:hidden hover:text-secondary cursor-pointer text-base lg:text-lg pt-10 lg:pt-0 lg:ml-5 xl:ml-10">
                 <Link
                   to="contactus"
                   spy={true}
@@ -134,7 +134,7 @@ const Navbar = () => {
           smooth={true}
           offset={-125}
           duration={500}
-          className="focus:outline-none text-white cursor-pointer lg:text-lg lg:font-bold focus:ring-2 focus:ring-offset-2 hidden md:block bg-primary hover:bg-secondary transition duration-150 ease-in-out rounded-md px-4 sm:px-6 py-1 sm:py-2 text-sm"
+          className="focus:outline-none text-white cursor-pointer lg:text-base lg:font-medium focus:ring-2 focus:ring-offset-2 hidden lg:block bg-primary hover:bg-secondary transition duration-300 ease-in-out rounded-md px-4 sm:px-7 py-1 sm:py-3 text-sm"
         >
           Contact Us
         </Link>
