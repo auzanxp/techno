@@ -5,7 +5,7 @@ const Navbar = () => {
   const [show, setShow] = useState(false);
   return (
     <nav className="fixed top-0 left-0 right-0 bg-white z-10 w-full">
-      <div className="py-5 lg:py-0 container mx-auto lg:px-0 px-6 flex items-center justify-between">
+      <div className="py-5 lg:py-0 container mx-auto px-6 flex items-center justify-between">
         <div>
           <Link to="hero" spy={true} smooth={true} offset={-120} duration={500}>
             <img
@@ -113,7 +113,7 @@ const Navbar = () => {
                   Our Team
                 </Link>
               </li>
-              <li className="text-primary md:hidden hover:text-secondary cursor-pointer text-base lg:text-lg pt-10 lg:pt-0 lg:ml-5 xl:ml-10">
+              <li className="text-primary lg:hidden hover:text-secondary cursor-pointer text-base lg:text-lg pt-10 lg:pt-0 lg:ml-5 xl:ml-10">
                 <Link
                   to="contactus"
                   spy={true}
