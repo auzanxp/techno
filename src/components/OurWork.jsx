@@ -2,7 +2,7 @@ import React from "react";
 
 const OurWork = () => {
   return (
-    <div className="mx-auto container mb-12">
+    <div id="ourwork" className="mx-auto container mt-12">
       <h1 className="text-center mb-2 md:mb-6 font-extrabold text-primary text-2xl">
         Our Work
       </h1>

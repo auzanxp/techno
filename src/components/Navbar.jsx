@@ -1,13 +1,15 @@
 import React, { useState } from "react";
+import { Link } from "react-scroll";
+
 function Navbar() {
   const [show, setShow] = useState(false);
   return (
-    <div className="overflow-y-hidden">
+    <div className="fixed top-0 left-0 right-0 bg-white shadow z-10">
       <nav className="w-full">
         <div className="py-5 md:py-0 container mx-auto px-6 flex items-center justify-between">
           <div>
             <img
-              className="w-32 md:w-36"
+              className="w-36 md:w-40"
               src="https://www.technovative.co.id/_nuxt/img/technovative-logo_scale-w350.7e6ea57.png"
               alt="logo"
             />
@@ -42,7 +44,7 @@ function Navbar() {
             >
               <button
                 onClick={() => setShow(!show)}
-                className={`block md:hidden lg:hidden text-gray-500 hover:text-gray-700 focus:text-gray-700 fixed focus:outline-none focus:ring-2 focus:ring-gray-500 z-30 top-0 mt-6`}
+                className={`block md:hidden lg:hidden text-gray-500 hover:text-gray-700 focus:text-gray-700 fixed focus:outline-none focus:ring-2 focus:ring-gray-500 z-30 top-0 right-12 mt-6`}
               >
                 <svg
                   aria-label="close main menu"
@@ -63,26 +65,78 @@ function Navbar() {
               </button>
               <ul className="flex text-3xl md:text-base font-bold items-center py-10 md:flex flex-col md:flex-row justify-center fixed md:relative top-0 bottom-0 left-0 right-0 bg-white md:bg-transparent z-20">
                 <li className="text-primary hover:text-secondary cursor-pointer text-base lg:text-lg pt-10 md:pt-0">
-                  <a href="#">Home</a>
+                  <Link
+                    to="hero"
+                    spy={true}
+                    smooth={true}
+                    offset={-120}
+                    duration={500}
+                    onClick={() => setShow(!show)}
+                  >
+                    Home
+                  </Link>
                 </li>
                 <li className="text-primary hover:text-secondary cursor-pointer text-base lg:text-lg pt-10 md:pt-0 md:ml-5 lg:ml-10">
-                  <a href="#">Our Work</a>
+                  <Link
+                    to="ourwork"
+                    spy={true}
+                    smooth={true}
+                    offset={-125}
+                    duration={500}
+                    onClick={() => setShow(!show)}
+                  >
+                    Our Work
+                  </Link>
                 </li>
                 <li className="text-primary hover:text-secondary cursor-pointer text-base lg:text-lg pt-10 md:pt-0 md:ml-5 lg:ml-10">
-                  <a href="#">Our Success</a>
+                  <Link
+                    to="oursuccess"
+                    spy={true}
+                    smooth={true}
+                    offset={-125}
+                    duration={500}
+                    onClick={() => setShow(!show)}
+                  >
+                    Our Success
+                  </Link>
                 </li>
                 <li className="text-primary hover:text-secondary cursor-pointer text-base lg:text-lg pt-10 md:pt-0 md:ml-5 lg:ml-10">
-                  <a href="#">Our Team</a>
+                  <Link
+                    to="meetteam"
+                    spy={true}
+                    smooth={true}
+                    offset={-125}
+                    duration={500}
+                    onClick={() => setShow(!show)}
+                  >
+                    Our Team
+                  </Link>
                 </li>
                 <li className="text-primary md:hidden hover:text-secondary cursor-pointer text-base lg:text-lg pt-10 md:pt-0 md:ml-5 lg:ml-10">
-                  <a href="#">Contact Us</a>
+                  <Link
+                    to="contactus"
+                    spy={true}
+                    smooth={true}
+                    offset={-125}
+                    duration={1000}
+                    onClick={() => setShow(!show)}
+                  >
+                    Contact Us
+                  </Link>
                 </li>
               </ul>
             </div>
           </div>
-          <button className="focus:outline-none text-white lg:text-lg lg:font-bold focus:ring-2 focus:ring-offset-2 focus:ring-secondary hidden md:block bg-primary hover:bg-secondary transition duration-150 ease-in-out rounded-md border border-secondary px-4 sm:px-6 py-1 sm:py-2 text-sm">
+          <Link
+            to="contactus"
+            spy={true}
+            smooth={true}
+            offset={-125}
+            duration={500}
+            className="focus:outline-none text-white cursor-pointer lg:text-lg lg:font-bold focus:ring-2 focus:ring-offset-2 hidden md:block bg-primary hover:bg-secondary transition duration-150 ease-in-out rounded-md px-4 sm:px-6 py-1 sm:py-2 text-sm"
+          >
             Contact Us
-          </button>
+          </Link>
         </div>
       </nav>
     </div>

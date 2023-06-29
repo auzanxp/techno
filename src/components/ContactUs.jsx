@@ -3,7 +3,10 @@ import Form from "./Form";
 
 const ContactUs = () => {
   return (
-    <div className="w-full container mx-auto mb-8 px-0 md:px-6 flex flex-col justify-center items-center">
+    <div
+      id="contactus"
+      className="w-full container mx-auto mb-8 px-0 md:px-6 flex flex-col justify-center items-center"
+    >
       <div className="flex flex-col justify-items-center items-center px-4 md:px-0 mb-2">
         <h1 className="text-center mb-4 font-extrabold text-primary text-2xl">
           Contact Us
