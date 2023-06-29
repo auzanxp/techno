@@ -4,15 +4,23 @@ import { Link } from "react-scroll";
 function Navbar() {
   const [show, setShow] = useState(false);
   return (
-    <div className="fixed top-0 left-0 right-0 bg-white shadow z-10">
+    <div className="fixed top-0 left-0 right-0 bg-white shadow md:shadow-none z-10">
       <nav className="w-full">
         <div className="py-5 md:py-0 container mx-auto px-6 flex items-center justify-between">
           <div>
-            <img
-              className="w-36 md:w-40"
-              src="https://www.technovative.co.id/_nuxt/img/technovative-logo_scale-w350.7e6ea57.png"
-              alt="logo"
-            />
+            <Link
+              to="hero"
+              spy={true}
+              smooth={true}
+              offset={-120}
+              duration={500}
+            >
+              <img
+                className="w-36 md:w-40 cursor-pointer"
+                src="https://www.technovative.co.id/_nuxt/img/technovative-logo_scale-w350.7e6ea57.png"
+                alt="logo"
+              />
+            </Link>
           </div>
           <div>
             <button
