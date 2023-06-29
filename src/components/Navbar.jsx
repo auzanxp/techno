@@ -65,7 +65,7 @@ const Navbar = () => {
               </svg>
             </button>
             <ul className="flex text-3xl lg:text-base font-bold items-center py-10 lg:flex flex-col lg:flex-row justify-center fixed lg:relative top-0 right-0 w-1/3 lg:w-full bg-white rounded-lg shadow-md lg:shadow-none lg:bg-transparent z-20">
-              <li className="text-primary hover:text-secondary cursor-pointer text-base lg:text-lg pt-10 lg:pt-0">
+              <li className="text-primary hover:text-secondary cursor-pointer text-base lg:text-lg mt-10 lg:mt-0">
                 <Link
                   to="hero"
                   spy={true}
@@ -77,7 +77,7 @@ const Navbar = () => {
                   Home
                 </Link>
               </li>
-              <li className="text-primary hover:text-secondary cursor-pointer text-base lg:text-lg pt-10 lg:pt-0 lg:ml-5 xl:ml-10">
+              <li className="text-primary hover:text-secondary cursor-pointer text-base lg:text-lg mt-5 lg:mt-0 lg:ml-5 xl:ml-10">
                 <Link
                   to="ourwork"
                   spy={true}
@@ -89,7 +89,7 @@ const Navbar = () => {
                   Our Work
                 </Link>
               </li>
-              <li className="text-primary hover:text-secondary cursor-pointer text-base lg:text-lg pt-10 lg:pt-0 lg:ml-5 xl:ml-10">
+              <li className="text-primary hover:text-secondary cursor-pointer text-base lg:text-lg mt-5 lg:mt-0 lg:ml-5 xl:ml-10">
                 <Link
                   to="oursuccess"
                   spy={true}
@@ -101,7 +101,7 @@ const Navbar = () => {
                   Our Success
                 </Link>
               </li>
-              <li className="text-primary hover:text-secondary cursor-pointer text-base lg:text-lg pt-10 lg:pt-0 lg:ml-5 xl:ml-10">
+              <li className="text-primary hover:text-secondary cursor-pointer text-base lg:text-lg mt-5 lg:mt-0 lg:ml-5 xl:ml-10">
                 <Link
                   to="meetteam"
                   spy={true}
@@ -113,7 +113,7 @@ const Navbar = () => {
                   Our Team
                 </Link>
               </li>
-              <li className="text-primary lg:hidden hover:text-secondary cursor-pointer text-base lg:text-lg pt-10 lg:pt-0 lg:ml-5 xl:ml-10">
+              <li className="text-primary lg:hidden hover:text-secondary cursor-pointer text-base lg:text-lg mt-5 lg:mt-0 lg:ml-5 xl:ml-10">
                 <Link
                   to="contactus"
                   spy={true}
